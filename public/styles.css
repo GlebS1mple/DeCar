@@ -5,6 +5,30 @@ p,body,h1,h2,h3,h4,h5,h6,ul{
 body.lock {
     overflow: hidden;
 }
+/*Animation*/
+.about__heading,
+.about__subheading,
+.about__link{
+    transform: translate(0px,120%);
+    opacity: 0;
+    transition: all .9s ease 0s;
+}
+.about__heading._active,
+.about__subheading._active,
+.about__link._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.services__card.card{
+    transform: translate(-120%,0px);
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+.services__card.card._active{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+
 /*HEADER*/
 .header {
     background-color: white;
